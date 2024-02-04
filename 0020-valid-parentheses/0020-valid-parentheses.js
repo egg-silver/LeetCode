@@ -18,7 +18,7 @@ var isValid = function(s) {
         '{': '}'
     };
 
-    // 문자열을 순회
+    // 문자열 순회
     for (let char of s) {
         // 여는 괄호인 경우 스택에 추가
         if (brackets[char]) {
@@ -33,6 +33,6 @@ var isValid = function(s) {
         }
     }
 
-    // 스택이 비어있어야 모든 괄호가 올바르게 닫힌 것임
+    // 스택이 비어있어야 모든 괄호가 올바르게 닫힌 것
     return stack.length === 0;
 };
